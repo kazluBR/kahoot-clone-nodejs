@@ -132,6 +132,7 @@ function updateTimer(){
     }, 1000);
 }
 socket.on('GameOver', function(data){
+    
     document.getElementById('nextQButton').style.display = "none";
     document.getElementById('square1').style.display = "none";
     document.getElementById('square2').style.display = "none";
@@ -145,6 +146,7 @@ socket.on('GameOver', function(data){
     document.getElementById('timerText').innerHTML = "";
     document.getElementById('question').innerHTML = "GAME OVER";
     document.getElementById('playersAnswered').innerHTML = "";
+    document.getElementById('questionNum').innerHTML = "";
     
     
     
@@ -155,11 +157,11 @@ socket.on('GameOver', function(data){
     document.getElementById('winner5').style.display = "block";
     document.getElementById('winnerTitle').style.display = "block";
     
-    document.getElementById('winner1').innerHTML = "1. " + data.num1;
-    document.getElementById('winner2').innerHTML = "2. " + data.num2;
-    document.getElementById('winner3').innerHTML = "3. " + data.num3;
-    document.getElementById('winner4').innerHTML = "4. " + data.num4; 
-    document.getElementById('winner5').innerHTML = "5. " + data.num5;
+    document.getElementById('winner1').innerHTML = "1. " + data.num1.name + " (" + data.num1.score + " pts)";
+    document.getElementById('winner2').innerHTML = "2. " + data.num2.name + " (" + data.num2.score + " pts)";
+    document.getElementById('winner3').innerHTML = "3. " + data.num3.name + " (" + data.num3.score + " pts)";
+    document.getElementById('winner4').innerHTML = "4. " + data.num4.name + " (" + data.num4.score + " pts)";
+    document.getElementById('winner5').innerHTML = "5. " + data.num5.name + " (" + data.num5.score + " pts)";
 });
 
 

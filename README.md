@@ -1,10 +1,18 @@
 # kahoot-clone-nodejs
 <h3>INSTRUCTIONS:</h3>
+<h4>On Linux</h4>
 <ol>
   <li>Install MongoDB: 'Sudo apt-get install mongodb'</li>
   <li>Start MongoDB: 'Sudo service mongodb start'</li>
-  <li>Make sure all node modules have been installed listed in package.json: express, moment, mongodb, mongoose, socket.io</li>
+  <li>Make sure all node modules have been installed listed in package.json: express, moment, mongodb, socket.io</li>
   <li>Start Server: nodejs server/server.js</li>
+</ol>
+<br>
+<h4>On Windows</h4>
+<ol>
+  <li>Donwload and Install MongoDB: <a href="https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-5.0.5-signed.msi">link</a></li>
+  <li>Make sure all node modules have been installed listed in package.json: express, moment, mongodb, socket.io</li>
+  <li>Start Server: node server/server.js</li>
 </ol>
 <br>
 <h3>Description</h3>
